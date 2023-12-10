@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".detailmenu"
+    android:id="@+id/cons_layout"
+    >
+
+    <ImageView
+        android:id="@+id/makanan"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:src="@drawable/makanan"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:scaleType="centerCrop"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/backspace"
+            android:theme="@style/radius"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/favorite"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/like"
+            android:theme="@style/radius"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/sheet"
+        android:layout_width="match_parent"
+        android:layout_height="800dp"
+        android:background="@drawable/content1"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="10dp"
+            android:scaleType="center"
+            android:src="@drawable/swipe" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="323dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nasi Goreng Spesial"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bahan :"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:paddingLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- 1 bungkus Sasa Bumbu Nasi Goreng Spesial"
+                    android:textSize="15dp"
+                    android:paddingLeft="20dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- 4 sdm minyak goreng"
+                    android:textSize="15dp"
+                    android:paddingLeft="20dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- 300 gr nasi"
+                    android:textSize="15dp"
+                    android:paddingLeft="20dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- 200 gr ayam suwir"
+                    android:textSize="15dp"
+                    android:paddingLeft="20dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- 6 butir bakso"
+                    android:textSize="15dp"
+                    android:paddingLeft="20dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- 3 buah sosis"
+                    android:textSize="15dp"
+                    android:paddingLeft="20dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- 1 buah telur"
+                    android:textSize="15dp"
+                    android:paddingLeft="20dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cara Membuat :"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:paddingLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1. Cara membuat nasi goreng spesial ini yang pertama panaskan minyak goreng dengan api sedang. Masukkan ayam suwir, potongan bakso, dan sosis, kemudian masak sebentar."
+                    android:textSize="15dp"
+                    android:paddingLeft="20dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2. Tambahkan nasi dan satu bungkus Sasa Bumbu Nasi Goreng Ayam Spesial. Aduk hingga merata."
+                    android:textSize="15dp"
+                    android:paddingLeft="20dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3. Setelah masak, pindahkan nasi goreng ke atas piring"
+                    android:textSize="15dp"
+                    android:paddingLeft="20dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4. Ceplok telur hingga matang, lalu tempatkan di atas nasi goreng."
+                    android:textSize="15dp"
+                    android:paddingLeft="20dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5. Nasi goreng spesial sudah jadi dan siap disantap selagi hangat."
+                    android:textSize="15dp"
+                    android:paddingLeft="20dp"
+                    />
+
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+    </FrameLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
